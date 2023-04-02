@@ -2,9 +2,9 @@ const data = [
   {
     "type": "Feature",
     "properties": {
-      "PARK_ID": 960,
-      "NAME": "Bearbrook Skateboard Park",
-      "DESCRIPTIO": "Flat asphalt surface, 5 components"
+      "place_ID": 960,
+      "name": "Ring road peshawar",
+      "description": "Flat asphalt surface, 5 components"
     },
     "geometry": {
       "type": "Point",
@@ -15,9 +15,9 @@ const data = [
   {
     "type": "Feature",
     "properties": {
-      "PARK_ID": 1219,
-      "NAME": "Bob MacQuarrie Skateboard Park (SK8 Extreme Park)",
-      "DESCRIPTIO": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
+      "place_ID": 1219,
+      "name": "Hayatabad Peshawar",
+      "description": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
     },
     "geometry": {
       "type": "Point",
@@ -28,15 +28,54 @@ const data = [
   {
     "type": "Feature",
     "properties": {
-      "PARK_ID": 1688,
-      "NAME": "Bob MacQuarrie Skateboard Park (SK8 Extreme Park)",
-      "DESCRIPTIO": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
+      "place_ID": 1688,
+      "name": "University town",
+      "description": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
     },
     "geometry": {
       "type": "Point",
       "coordinates": [33.9922, 71.4982]
     },
     'img': '/pic3.jpg'
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "place_ID": 1222,
+      "name": "Hayatabad phase 3",
+      "description": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [33.9841, 71.4552]
+    },
+    'img': '/pic4.jpg'
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "place_ID": 1589,
+      "name": "Spin Jumat Peshawar",
+      "description": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [33.9975, 71.4888]
+    },
+    'img': '/pic5.jpg'
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "place_ID": 4435,
+      "name": "Warsak road Peshawar",
+      "description": "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [34.047467, 71.521314]
+    },
+    'img': '/pic6.jpg'
   }
 ]
 
