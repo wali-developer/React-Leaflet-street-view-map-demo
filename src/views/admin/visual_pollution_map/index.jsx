@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import mapData from "../../../components/visual_pollution_map/mapData";
 
+import { Pannellum, PannellumVideo } from "pannellum-react";
+
 const VisualPollutionMap = () => {
   const [active, setActive] = useState(null);
   return (
@@ -32,13 +34,13 @@ const VisualPollutionMap = () => {
                   },
                 }}
               >
-                <Popup
+                {/* <Popup
                   onClose={() => {
                     setActive(null);
                   }}
                 >
                   <p>{active?.properties?.name}</p>
-                </Popup>
+                </Popup> */}
               </Marker>
             ))}
           </MapContainer>
@@ -46,11 +48,39 @@ const VisualPollutionMap = () => {
         <div className="rounded-[20px] bg-white p-4 shadow-3xl shadow-shadow-500">
           {active ? (
             <div className="h-[370px] w-full">
-              <img
+              {/* <img
                 src={active?.img}
                 alt={active?.NAME}
                 className="h-full w-full rounded-[20px] object-cover"
-              />
+              /> */}
+              <Pannellum
+                width="100%"
+                height="370px"
+                image={active?.img}
+                pitch={10}
+                yaw={180}
+                hfov={110}
+                autoLoad
+                onLoad={() => {
+                  console.log("panorama loaded");
+                }}
+              >
+                <Pannellum.Hotspot
+                  type="info"
+                  pitch={11}
+                  yaw={-167}
+                  text="Info Hotspot Text 3"
+                  URL="https://github.com/farminf/pannellum-react"
+                />
+
+                <Pannellum.Hotspot
+                  type="info"
+                  pitch={31}
+                  yaw={-107}
+                  text="Info Hotspot Text 4"
+                  URL="https://github.com/farminf/pannellum-react"
+                />
+              </Pannellum>
             </div>
           ) : (
             <h1 className="flex h-full w-full items-center justify-center text-lg">
